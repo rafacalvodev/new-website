@@ -4,13 +4,13 @@
     <div class="wrapper">
       <nav class="pagination__inner" aria-label="Pagination links">
         {% if pagination.href.previous %}
-          <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">
-            <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+          <a class="button" href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards" data-type="primary">
+            {{ paginationPrevText if paginationPrevText else 'Previous' }}
           </a>
         {% endif %}
         {% if pagination.href.next %}
-          <a href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">
-            <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
+          <a class="button" href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards" data-type="primary">
+            {{ paginationNextText if paginationNextText else 'Next' }}
           </a>
         {% endif %}
       </nav>

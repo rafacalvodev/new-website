@@ -5,3 +5,25 @@
     padding: 1em;
   }
 }
+
+.post-header {
+  margin-block-start: var(--space-size-2);
+
+  time {
+    font-size: var(--font-0);
+    font-weight: 600;
+  }
+
+  .flex {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: var(--space-base);
+  }
+
+  .tags-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--space-base);
+    color: var(--primary);
+  }
+}

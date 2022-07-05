@@ -1,27 +1,13 @@
 {% extends "layouts/base.njk" %}
-{% set pageHeaderTitle = title %}
+{# {% set pageHeaderTitle = title %} #}
 {# Render post date and any tags that this post has been filed under #}
-{% set pageHeaderSummary %}
+{# {% set pageHeaderSummary = summary %} #}
 {# Grab other posts that aren’t this one for the 'more from the blog' feed #}
 {% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
-<time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
-<time datetime="{{ item.date | w3Date }}" class="dt-published">{{ item.date | longDate }}</time>
-{% if tags %}
-  <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
-  <ul class="tags-list" aria-describedby="tags-desc">
-    {% for tag in tags %}
-      <li>
-        <a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
-{% endset %}
-{% block content %}
-  {% include "partials/page-header.njk" %}
-  <article>
-    <div class="wrapper">
-      {{ content | safe }}
+  {% block content %}
+  {% include "partials/post-header.njk" %}
+    <article>
+      <div class="wrapper flow"> {{ content | safe }}
     </div>
     {% if recommendedPosts %}
       <footer class="recommended-posts">
