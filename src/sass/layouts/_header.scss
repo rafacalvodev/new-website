@@ -1,0 +1,40 @@
+.page-header {
+  margin-block-start: var(--space-size-2);
+}
+
+.hero {
+  margin-block-start: var(--space-size-4);
+
+  &__title {
+    text-align: center;
+
+    h1,
+    h2 {
+      margin: 0 auto;
+    }
+
+    p {
+      max-width: 60ch;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: var(--font-2);
+    }
+
+    em {
+      font-size: inherit;
+      color: var(--primary);
+    }
+  }
+
+  &__cta {
+    --cluster-gap: 0.65em;
+    margin-block-start: var(--space-size-0);
+    // display: flex;
+    // justify-content: flex-start;
+    // gap: 1.5rem;
+  }
+}
+
+.headline {
+  max-width: 18ch;
+}

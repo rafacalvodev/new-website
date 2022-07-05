@@ -1,0 +1,77 @@
+form {
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-block-start: var(--space-size-1);
+    font-size: var(--font-0);
+    font-weight: 700;
+  }
+}
+
+.input,
+textarea {
+  // Capitalized to prevent Sass
+  // thinking it's the Sass max()
+  //max-width: 30rem;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 0.15em solid var(--border-color);
+  border-radius: var(--radius-small);
+  transition: 180ms box-shadow ease-in-out;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.input:focus,
+textarea:focus {
+  border-color: hsl(var(--input-focus-h),
+      var(--input-focus-s),
+      var(--input-focus-l));
+  box-shadow: 0 0 0 3px hsla(var(--input-focus-h),
+      var(--input-focus-s),
+      calc(var(--input-focus-l) + 40%),
+      0.8);
+  outline: 3px solid transparent;
+}
+
+// .input:not(textarea) {
+//   line-height: 1;
+//   height: 2.25rem;
+// }
+
+input[type="file"] {
+  font-size: 0.9em;
+  padding-top: 0.35rem;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+.input[readonly] {
+  border-style: dotted;
+  cursor: not-allowed;
+  color: #777;
+}
+
+.input[disabled] {
+  --input-border: #ccc;
+
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
+// label {
+//   font-size: 1.125rem;
+//   font-weight: 500;
+//   line-height: 1;
+// }
+
+// .input+label {
+//   margin-top: 2rem;
+// }

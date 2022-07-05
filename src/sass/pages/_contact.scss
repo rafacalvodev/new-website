@@ -1,0 +1,22 @@
+.contact {
+  margin-block-start: var(--space-size-1);
+  padding: 2em;
+
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.5em;
+    }
+
+    .button {
+      max-width: 5em;
+    }
+  }
+}

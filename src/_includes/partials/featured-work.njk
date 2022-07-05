@@ -1,0 +1,32 @@
+<section id="featured" class="featured-work">
+  <div class="wrapper flow">
+    <header class="featured-work__header">
+      <h2 class="featured-work__heading headline" data-highlight="dark">
+        {{ featuredWork.title }}
+      </h2>
+      <p class="featured-work__summary">
+        {{ featuredWork.summary }}
+      </p>
+    </header>
+    <article class="grid">
+      {% for item in collections.recentBlog %}
+        <figure class="card featured-work__item flow">
+          <div class="featured-work__media frame" data-frame="primary">
+            <img class="radius" src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}"/>
+          </div>
+          <figcaption class="card__content featured-work__content flow">
+            <h3 class="featured-work__heading">
+              <a class="featured-work__link" href="{{ item.url }}">{{ item.data.title }}</a>
+            </h3>
+            <p class="featured-work__summary">
+              {{ item.data.summary }}
+            </p>
+          </figcaption>
+        </figure>
+      {% endfor %}
+    </article>
+    <div class="featured-work__cta">
+      <a class="button" href="/work/" data-type="section-cta">See more work</a>
+    </div>
+  </div>
+</section>

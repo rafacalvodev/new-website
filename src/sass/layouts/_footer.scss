@@ -1,0 +1,53 @@
+.footer {
+  margin-block-start: var(--space-size-5);
+  padding: var(--space-size-1);
+  text-align: center;
+  background-color: aquamarine;
+
+  h4 {
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .grid {
+    --gap: var(--space-size-2);
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  &__content {
+    a {
+      color: var(--primary);
+    }
+  }
+
+  &__links {
+    .flex {
+      justify-content: center;
+    }
+  }
+
+
+
+  // &__content {
+  //   grid-template-areas:
+  //     "title title"
+  //     "info links"
+  //   ;
+  // }
+
+  // &__title {
+  //   grid-area: title;
+  // }
+
+  // &__info {
+  //   grid-area: info;
+  // }
+
+  // &__links {
+  //   grid-area: links;
+  // }
+}

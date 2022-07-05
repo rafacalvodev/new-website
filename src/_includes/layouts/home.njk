@@ -1,0 +1,19 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+  <article class="hero wrapper">
+    <div class="hero__title flow">
+      <h1>{{ headerTitle | safe }}
+        <em>I'm {{ author.nameShort | safe }}</em>, {{ author.introShort | safe }}</h1>
+      <p>{{ author.intro | safe }}</p>
+    </div>
+    <div class="hero__cta cluster">
+      <a class="button" href="#featured" data-type="primary">Se what I can do!</a>
+      <a class="button" href="/contact/" data-type="secondary">Let's get in touch!</a>
+    </div>
+    {# <div class="flow">
+                                                                                      
+                                                                                    </div> #}
+  </article>
+  {% include "partials/featured-work.njk" %}
+  {% include "partials/blog-recent.njk" %}
+{% endblock %}

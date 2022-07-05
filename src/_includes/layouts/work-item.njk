@@ -1,0 +1,125 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+  <section class="work-item">
+    <header class="hero flow">
+      <div class="wrapper hero__inner">
+        <div class="hero__content">
+          <h1 class="work-item__headline" data-highlight="quinary">
+            {{ title }}
+          </h1>
+          <p class="work-item__sumary">{{ summary }}</p>
+        </div>
+      </div>
+      <img src="{{ hero.image }}" alt="{{ hero.imageAlt }}" class="work-item__hero-image"/>
+    </header>
+    <article>
+      <div class="wrapper flow">
+        <h2 class="headline" data-highlight="secondary">Key facts</h2>
+        <div class="work-item__info grid">
+          <div class="flow">
+            {% if launched %}
+              <section>
+                <h3>Launched</h3>
+                <span class="project-meta">{{ launched | safe }}</span>
+              </section>
+            {% endif %}
+            {% if acquired %}
+              <section>
+                <h3>Acquired</h3>
+                <span class="project-meta">{{ acquired | safe }}</span>
+              </section>
+            {% endif %}
+            {% if tags %}
+              <section>
+                <h3>Filed Under</h3>
+                <ul class="tags-list flex" aria-describedby="tags-desc">
+                  {% for tag in tags %}
+                    <li>
+                      <a href="/tag/{{ tag | slug }}/">
+                        <span>#{{ tag | title | replace(' ', '') }}</span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </section>
+            {% endif %}
+          </div>
+          <div class="flow">
+            <section>
+              {% if role %}
+                <h3>Role</h3>
+                <ul class="project-meta flex" role="list">
+                  {% for role in role %}
+                    <li>{{ role }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </section>
+            <section>
+              {% if platform %}
+                <h3>Platform</h3>
+                <ul class="project-meta flex" role="list">
+                  {% for platform in platform %}
+                    <li>{{ platform }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </section>
+            <section>
+              {% if stack %}
+                <h3>Stack</h3>
+                <ul class="project-meta flex" role="list">
+                  {% for stack in stack %}
+                    <li>{{ stack }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div
+      class="wrapper">{# <article class="gallery flow">
+                                                                                                                                                {% for item in gallery %}
+                                                                                                                                                  <figure class="gallery__item flow">
+                                                                                                                                                    <div class="gallery__media" data-frame="primary">
+                                                                                                                                                      <img src="{{ item.image }}" alt="" aria-hidden="true" class="radius"/>
+                                                                                                                                                    </div>
+                                                                                                                                                    <figcaption class="gallery__content flow">
+                                                                                                                                                      <h2 class="gallery__heading">
+                                                                                                                                                        {{ item.title }}
+                                                                                                                                                      </h2>
+                                                                                                                                                      <p class="gallery__summary">
+                                                                                                                                                        {{ item.summary }}
+                                                                                                                                                      </p>
+                                                                                                                                                    </figcaption>
+                                                                                                                                                  </figure>
+                                                                                                                                                {% endfor %}
+                                                                                                                                              </article> #}
+    </div>
+    <div class="wrapper">
+      {% if projectImg %}
+        <figure class="fig-container">
+          <picture>
+            <source srcset="/img/work/{{ projectImg.img }}.avif" type="image/avif">
+              <source srcset="/img/work/{{ projectImg.img }}.webp" type="image/webp">
+                <img class="radius" src="/img/work/outgoings-gallery-1.jpg" alt="{{ projectImg.alt }}" loading="lazy"></picture>
+                {% if projectImg.blurb %}
+                  <figcaption>
+                    {{ projectImg.blurb }}
+                  </figcaption>
+                {% endif %}
+              </figure>
+            {% endif %}
+            <article class="flow">
+              {{ content | safe }}
+            </article>
+            <div class="work-item__link">
+              <span class="visually-hidden">Link opens in a new tab or window</span>
+              <a href="{{ projectUrl }}" rel="noopener" target="_blank" class="button button-dark" data-type="work-link">View Project
+              </a>
+            </div>
+          </div>
+        </section>
+      {% endblock %}

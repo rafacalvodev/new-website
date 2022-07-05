@@ -1,0 +1,18 @@
+main>*+* {
+  margin-block-start: var(--space-size-5);
+}
+
+section {
+
+  h2 {
+    margin-block: 1rem;
+  }
+}
+
+.featured-work,
+.recent-posts {
+  .card:hover {
+    box-shadow: var(--button-shadow-1);
+    transform: var(--translate-45-deg-2-small);
+  }
+}

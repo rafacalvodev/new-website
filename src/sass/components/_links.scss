@@ -1,0 +1,42 @@
+a {
+  color: currentColor;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: .08em;
+
+  &:hover {
+    background-color: var(--hover-link-bg);
+    color: var(--hover-link-color);
+  }
+}
+
+
+
+a[data-type="skip-content"] {
+  color: var(--skip-link);
+  font-weight: 500;
+  text-decoration: underline;
+  height: 1px;
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+:is(a, button, summary, .button) {
+  /* Using max() ensures at least a value of 2px, 
+  while allowing the possibility of scaling 
+  relative to the component */
+  --outline-size: max(2px, 0.08em);
+  --outline-style: solid;
+  --outline-color: currentColor;
+}
+
+:is(a, button, summary, .button):focus,
+:is(a, button, .button):focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}

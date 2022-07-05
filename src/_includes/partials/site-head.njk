@@ -1,0 +1,23 @@
+<header class="site-head" role="banner">
+  <a class="skip-content" href="#main-content" data-type="skip-content">Saltar a contenido principal</a>
+  <div class="wrapper">
+    <div class="site-head__inner flex">
+      <div class="site-head__title">
+        <a
+          href="/" aria-label="{{ site.name }} - Inicio" class="site-head__brand">
+          {# {% include "partials/brand.svg" %} #}
+          Rafael Calvo
+        </a>
+      </div>
+      <nav class="site-head__nav" aria-label="Primary">
+        <ul class="nav__list" role="list">
+          {% for item in navigation.items %}
+            <li id="{{ item.id }}">
+              <a class="nav__link" href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

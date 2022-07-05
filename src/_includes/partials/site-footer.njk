@@ -1,0 +1,46 @@
+<div class="wrapper grid">
+  <div class="footer__title">
+    <h4>&copy;
+      <a href="#" rel="me">
+        Rafael Calvo</a>
+      - Todos los derechos reservados.
+    </h4>
+  </div>
+  <div class="footer__info">
+    <p>
+      Construido con
+      <a href="{{ tools.11ty }}">Eleventy</a>
+      y hospedado en
+      <a href="{{ tools.netlify }}">Netlify</a>, el código está ubicado en
+      <a href="https://github.com/rafacalvodev/new-website">GitHub</a>.
+    </p>
+    <p>
+      Este sitio usa
+      <a href="{{ tools.plausible }}">Plausible Analytics</a>, que no usa cookies y no te rstrea.
+    </p>
+  </div>
+  <div class="footer__links">
+    <ul class="flex" role="list">
+      <li>
+        {% include "src/img/icons/github.svg" %}
+        <a href="{{ author.githubUrl }}" rel="me">Github</a>
+      </li>
+      <li>
+        {% include "src/img/icons/codepen.svg" %}
+        <a href="{{ author.codepenUrl }}" rel="me">CodePen</a>
+      </li>
+      <li>
+        {% include "src/img/icons/twitter.svg" %}
+        <a href="{{ author.twitterUrl }}" rel="me">Twitter</a>
+      </li>
+      <li>
+        {% include "src/img/icons/instagram.svg" %}
+        <a href="{{ author.instagramUrl }}" rel="me">Instagram</a>
+      </li>
+      <li>
+        {% include "src/img/icons/linkedin.svg" %}
+        <a href="{{ author.linkedInUrl }}" rel="me">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+</div>

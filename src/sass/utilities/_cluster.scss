@@ -1,0 +1,9 @@
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 45rem;
+  margin: 0 auto;
+  gap: var(--cluster-gap, .4rem);
+}

@@ -1,0 +1,92 @@
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+  /* Colors */
+  //--background-color-light: hsl(35, 100%, 98%);
+  //--background-color-light: #fcf7ff;
+
+  // #001ACE
+  --background-color-light: #c9fdfd;
+  --background-color-dark: #1d1927;
+  //--background-color-dark: hsl(36, 7%, 13%);
+  --primary: #001ACE;
+  //--primary: #3137fd;
+  --primary-dark: #221d30;
+  //--primary-dark: #00103B;
+  --color-lightest: hsl(0, 0%, 100%);
+  --color-darkest: hsl(0, 0%, 0%);
+  //--secondary: #f9f871;
+  --secondary: #ffee00;
+  --accent: #e800c3;
+  //--accent: #88e281;
+  --hover-link-bg: var(--secondary);
+  --hover-link-color: var(--color-darkest);
+  --shadow-color: rgba(0, 0, 0, 1);
+  --title-link: var(--color-darkest);
+  --tag-color: var(--primary);
+  --v-dark-grey: #121212;
+  --green: #88e281;
+  --skip-link: #111fe4;
+
+
+
+  //--primary: #009cf9;
+  //--secondary: #E7BA4B;
+  //--accent: #cb76c0;
+  //--hover-link-bg: var(--primary-dark);
+  //--hover-link-color: var(--white);
+
+  /* Light Mode */
+  --background-color: var(--background-color-light);
+  --text-color: var(--color-darkest);
+  --nav-links-color: var(--primary-dark);
+
+
+  /* Typography sizes */
+  --font--2: clamp(0.72rem, calc(0.67rem + 0.23vw), 0.84rem);
+  --font--1: clamp(0.90rem, calc(0.84rem + 0.29vw), 1.05rem);
+  --font-0: clamp(1.13rem, calc(1.05rem + 0.37vw), 1.31rem);
+  --font-1: clamp(1.41rem, calc(1.31rem + 0.46vw), 1.64rem);
+  --font-2: clamp(1.76rem, calc(1.64rem + 0.57vw), 2.05rem);
+  --font-3: clamp(2.20rem, calc(2.05rem + 0.71vw), 2.56rem);
+  --font-4: clamp(2.75rem, calc(2.57rem + 0.89vw), 3.20rem);
+  --font-5: clamp(3.43rem, calc(3.21rem + 1.12vw), 4.01rem);
+
+  /* Spacing */
+  --space-size-0: clamp(0.83rem, 0.9rem + -0.32vw, 0.67rem);
+  --space-base: clamp(1rem, 1rem + 0vw, 1rem);
+  --space-size-1: clamp(1.2rem, 1.08rem + 0.59vw, 1.5rem);
+  --space-size-2: clamp(1.44rem, 1.12rem + 1.58vw, 2.25rem);
+  --space-size-3: clamp(1.73rem, 1.09rem + 3.21vw, 3.38rem);
+  --space-size-4: clamp(2.07rem, 0.91rem + 5.83vw, 5.06rem);
+  --space-size-5: clamp(2.49rem, 0.5rem + 9.96vw, 7.59rem);
+
+
+  /* Border */
+  --border-0: 0.05em;
+  --border-1: 0.1em;
+  --border-2: 0.2em;
+
+  /* Border radius */
+  --radius-xs: 0.15em;
+  --radius-small: 0.2em;
+  --radius-medium: 0.5em;
+  --radius-large: 1em;
+
+  /* Border color */
+  --border-color: var(--color-darkest);
+
+  /* Shadows */
+  --solid-shadow-1: 0.2em 0.2em 0px 0px var(--shadow-color);
+  --button-shadow-1: 2px 2px 0px 0px var(--shadow-color);
+
+
+  /* Transforms & Animations */
+  --translate-45-deg: translate(2px, 2px);
+  --translate-45-deg-2: translate(-2px, -2px);
+  --translate-45-deg-2-small: translate(-2px, -2px);
+
+  /* Buttons colors */
+  --primary-button-background: var(--primary);
+  --secondary-button-background: var(--)
+}

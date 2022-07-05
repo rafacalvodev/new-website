@@ -1,0 +1,15 @@
+.tag-list {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: wrap;
+  gap: 1em;
+}
+
+.tag {
+  color: var(--tag-color);
+
+  &:hover {
+    color: var(--black);
+    background-color: var(--hover-link-bg);
+  }
+}

@@ -1,0 +1,55 @@
+#nav-home [aria-current="page"] {
+  background: inherit;
+  font-weight: 500;
+  padding: .4rem .5rem;
+  //color: var(--primary);
+}
+
+
+.site-head {
+  //color: var(--nav-links-color);
+
+  a:hover {
+    background: var(--secondary);
+  }
+
+  [aria-current="page"],
+  [data-state="active"] {
+    background: var(--secondary);
+    color: var(--black);
+    padding: .4rem .5rem;
+    text-decoration: none;
+    font-weight: 500;
+    // --outline-color: var(--primary);
+  }
+
+  &__brand {
+    font-family: 'Alegreya', serif;
+    font-size: var(--font-3);
+    font-weight: 800;
+    //color: var(--primary);
+    text-decoration: none;
+  }
+
+  &__inner {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  li {
+    list-style: none;
+    padding-inline-end: 1.5em;
+  }
+
+  li:last-child {
+    padding-inline-end: 0;
+  }
+}
