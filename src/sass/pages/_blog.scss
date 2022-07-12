@@ -1,0 +1,14 @@
+#post-list {
+  .post-list {
+    margin-top: 2rem;
+  }
+
+  h3 a:hover {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .flow {
+    --flow-spacer: 2.5em;
+  }
+}

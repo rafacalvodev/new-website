@@ -1,32 +1,30 @@
 <article>
   <div class="wrapper" id="post-list">
-    <div class="flow">
-      {% if postListHeadline %}
-        <h2 class="headline measure-micro" data-highlight="primary">
-          {{ postListHeadline }}
-        </h2>
-      {% endif %}
-      <div>
-        <ol class="post-list flow">
-          {% for item in postListItems %}
-            <li class="post-list__item">
-              <h3>
-                <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
-              </h3>
-              <p>{{ item.data.summary | safe }}</p>
-              <ul class="tag-list tag-list-summary" role="list">
-                {% for tag in item.data.tags %}
-                  <li>
-                    <a class="tag" href="/tag/{{ tag | slug }}/">
-                      <span role="presentation">#</span>
-                      {{ tag | replace(' ', '-') | lower }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </li>
-          {% endfor %}
-        </ol>
-      </div>
+    <div>
+      {# {% if postListHeadline %}
+                          <h2 class="headline measure-micro" data-highlight="primary">
+                            {{ postListHeadline }}
+                          </h2>
+                        {% endif %} #}
     </div>
+    <ol class="post-list flow" role='list'>
+      {% for item in postListItems %}
+        <li class="post-list__item">
+          <h3>
+            <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
+          </h3>
+          <p>{{ item.data.summary | safe }}</p>
+          <ul class="tag-list tag-list-summary" role="list">
+            {% for tag in item.data.tags %}
+              <li>
+                <a class="tag" href="/tag/{{ tag | slug }}/">
+                  <span role="presentation">#</span>
+                  {{ tag | replace(' ', '-') | lower }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ol>
   </div>
 </article>

@@ -61,6 +61,11 @@ p {
 }
 
 a {
+  text-decoration: none;
+}
+
+a,
+ul {
   font-size: var(--font-0);
 }
 

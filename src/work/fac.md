@@ -1,6 +1,6 @@
 ---
 title: 'Fundación Arquitectura y Ciudad'
-summary: 'This blog was born out of the need to structuredly disseminate various initiatives that the Fundación Arquitectura y Ciudad (FAC) has promoted over time and, in particular, some of its members.'
+summary: 'Blog that serves as a small information and documentation center on Venezuelan architecture with the aspiration that it becomes a reference site for architects, professionals from other branches, researchers and the general public.'
 projectUrl: 'https://fundaayc.wordpress.com/'
 launched: 'Agosto 2016'
 hero:

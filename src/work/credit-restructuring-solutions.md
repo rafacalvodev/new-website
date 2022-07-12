@@ -1,6 +1,6 @@
 ---
 title: 'Credit Restructuring Solutions'
-summary: 'Main website of Credit Restructuring Solutions, a credit repair company. My work was to make the website from scratch, after it suffered from a virus, and make the optimal modifications.'
+summary: 'Website development and SEO optimization for a credit repair company based in El paso, Texas, that help people improve their financial situation with one of the best teams in the field and flexible prices.'
 projectUrl: 'https://creditrestructuringsolutions.com/'
 launched: 'Feburary 2018'
 hero:

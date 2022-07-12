@@ -8,7 +8,7 @@
 
   &__item {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: 1fr;
 
     @media screen and (min-width: 900px) {
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))

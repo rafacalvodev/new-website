@@ -1,8 +1,9 @@
 .footer {
   margin-block-start: var(--space-size-5);
-  padding: var(--space-size-1);
+  padding-block: var(--space-size-1);
   text-align: center;
-  background-color: aquamarine;
+  background-color: var(--primary);
+  color: var(--background-color);
 
   h4 {
     font-weight: 700;
@@ -27,6 +28,17 @@
   &__links {
     .flex {
       justify-content: center;
+      gap: var(--space-size-1);
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+
+      a {
+        text-decoration: none;
+      }
     }
   }
 

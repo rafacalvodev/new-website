@@ -16,3 +16,28 @@ section {
     transform: var(--translate-45-deg-2-small);
   }
 }
+
+.about-short {
+  h4 {
+    max-width: 40ch;
+  }
+
+  ul {
+    list-style: inside;
+  }
+
+  .flex {
+    align-items: center;
+    gap: 2em;
+  }
+
+  .cluster {
+    justify-content: flex-start;
+    margin-inline: 0;
+    margin-block: var(--space-size-1);
+  }
+
+  &__image {
+    flex: 1 1 0;
+  }
+}

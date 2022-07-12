@@ -1,10 +1,10 @@
 .card {
-  border-width: var(--border-1);
+  background-color: var(--color-lightest);
+  border-width: 2px;
   border-style: solid;
   border-color: var(--border-color);
   border-radius: var(--radius-medium);
   overflow: hidden;
-  background-color: var(--background-color);
   position: relative;
 
   &:hover {

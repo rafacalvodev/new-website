@@ -32,7 +32,7 @@
             {% if tags %}
               <section>
                 <h3>Filed Under</h3>
-                <ul class="tags-list flex" aria-describedby="tags-desc">
+                <ul class="tags-list flex" aria-describedby="tags-desc" role="list">
                   {% for tag in tags %}
                     <li>
                       <a href="/tag/{{ tag | slug }}/">
@@ -50,7 +50,9 @@
                 <h3>Role</h3>
                 <ul class="project-meta flex" role="list">
                   {% for role in role %}
-                    <li>{{ role }}</li>
+                    <li>
+                      <span>{{ role }}</span>
+                    </li>
                   {% endfor %}
                 </ul>
               {% endif %}
@@ -60,7 +62,9 @@
                 <h3>Platform</h3>
                 <ul class="project-meta flex" role="list">
                   {% for platform in platform %}
-                    <li>{{ platform }}</li>
+                    <li>
+                      <span>{{ platform }}</span>
+                    </li>
                   {% endfor %}
                 </ul>
               {% endif %}
@@ -70,7 +74,9 @@
                 <h3>Stack</h3>
                 <ul class="project-meta flex" role="list">
                   {% for stack in stack %}
-                    <li>{{ stack }}</li>
+                    <li>
+                      <span>{{ stack }}</span>
+                    </li>
                   {% endfor %}
                 </ul>
               {% endif %}
@@ -81,22 +87,22 @@
     </article>
     <div
       class="wrapper">{# <article class="gallery flow">
-                                                                                                                                                {% for item in gallery %}
-                                                                                                                                                  <figure class="gallery__item flow">
-                                                                                                                                                    <div class="gallery__media" data-frame="primary">
-                                                                                                                                                      <img src="{{ item.image }}" alt="" aria-hidden="true" class="radius"/>
-                                                                                                                                                    </div>
-                                                                                                                                                    <figcaption class="gallery__content flow">
-                                                                                                                                                      <h2 class="gallery__heading">
-                                                                                                                                                        {{ item.title }}
-                                                                                                                                                      </h2>
-                                                                                                                                                      <p class="gallery__summary">
-                                                                                                                                                        {{ item.summary }}
-                                                                                                                                                      </p>
-                                                                                                                                                    </figcaption>
-                                                                                                                                                  </figure>
-                                                                                                                                                {% endfor %}
-                                                                                                                                              </article> #}
+                                                                                                                                                                                {% for item in gallery %}
+                                                                                                                                                                                  <figure class="gallery__item flow">
+                                                                                                                                                                                    <div class="gallery__media" data-frame="primary">
+                                                                                                                                                                                      <img src="{{ item.image }}" alt="" aria-hidden="true" class="radius"/>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <figcaption class="gallery__content flow">
+                                                                                                                                                                                      <h2 class="gallery__heading">
+                                                                                                                                                                                        {{ item.title }}
+                                                                                                                                                                                      </h2>
+                                                                                                                                                                                      <p class="gallery__summary">
+                                                                                                                                                                                        {{ item.summary }}
+                                                                                                                                                                                      </p>
+                                                                                                                                                                                    </figcaption>
+                                                                                                                                                                                  </figure>
+                                                                                                                                                                                {% endfor %}
+                                                                                                                                                                              </article> #}
     </div>
     <div class="wrapper">
       {% if projectImg %}
