@@ -1,8 +1,13 @@
 ---
-title: 'Homepage of the portfolio of'
+title: 'Rafael Calvo'
+pageTitle: "Homepage of the portfolio of"
 layout: 'layouts/home.njk'
 headerTitle: 'Greetings!'
-metaDesc: 'A made up agency site that you build if you take Learn Eleventy From Scratch, by Piccalilli'
+metaDesc: "Website/portfolio of Rafael Calvo"
+home:
+  greeting: "Greetings!"
+  intro: "I'm a front-end and WordPress developer who helps small businesses improve their online presence by creating a fast and SEO friendly websites."
+  introShort: "and I'll make you a website that'll help you catch more clients."
 featuredWork:
   title: "Selected work"
   summary: "Some projects that will give you an idea of ​​what I do."

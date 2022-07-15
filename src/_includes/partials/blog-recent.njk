@@ -4,9 +4,9 @@
       <h2>{{ recentArticles.title }}</h2>
       <p>{{ recentArticles.summary }}</p>
     </header>
-    <div class="grid recent-posts__grid post-list">
+    <div class="grid">
       {% for item in collections.blog  | limit(2) %}
-        <article class="flow card post-list__item">
+        <article class="flow card flex">
           <h3>
             <a class="post-list__link" href="{{ item.url }}">{{ item.data.title }}</a>
           </h3>

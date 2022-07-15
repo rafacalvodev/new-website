@@ -1,6 +1,4 @@
 {% extends "layouts/base.njk" %}
-{% set pageHeaderTitle = title %}
-{# {% set pageHeaderSummary = content %} #}
 {% set postListItems = pagination.items %}
 {# If this is a tag, grab those items instead as one large collection #}
 {% if tag %}
@@ -12,7 +10,7 @@
     {% include "partials/page-header.njk" %}
     {% include "partials/post-list.njk" %}
     {# If we leave pagination in for tags, the next and prev links will
-                  link to tags and be rather confusing, so don't render in that situation #}
+                          link to tags and be rather confusing, so don't render in that situation #}
     {% if not tag %}
       {% include "partials/pagination.njk" %}
     {% endif %}

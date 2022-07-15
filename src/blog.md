@@ -1,5 +1,6 @@
 ---
-title: 'Some things I write'
+title: "Blog"
+pageHeaderTitle: "Some articles and thoughts"
 pageTitle: "Articles and thoughts by"
 pageHeaderSummary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat egestas lorem, eget fringilla ligula malesuada sed. Nunc vulputate arcu. '
 layout: 'layouts/feed.njk'

@@ -3,9 +3,8 @@ main>*+* {
 }
 
 section {
-
   h2 {
-    margin-block: 1rem;
+    margin-block: var(--space-base);
   }
 }
 

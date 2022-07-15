@@ -1,6 +1,6 @@
 <section id="featured" class="featured-work">
   <div class="wrapper flow">
-    <header class="featured-work__header">
+    <header>
       <h2 class="featured-work__heading headline" data-highlight="dark">
         {{ featuredWork.title }}
       </h2>
@@ -10,11 +10,11 @@
     </header>
     <article class="grid">
       {% for item in collections.featuredWork %}
-        <figure class="card featured-work__item flow">
-          <div class="featured-work__media frame" data-frame="primary">
+        <figure class="card flow">
+          <div data-frame="primary">
             <img class="radius" src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}"/>
           </div>
-          <figcaption class="card__content featured-work__content flow">
+          <figcaption class="card__content flow">
             <h3 class="featured-work__heading">
               <a class="featured-work__link" href="{{ item.url }}">{{ item.data.title }}</a>
             </h3>

@@ -9,14 +9,16 @@
     font-weight: 700;
   }
 
+  p {
+    max-width: 100%;
+  }
+
   a {
     text-decoration: underline;
   }
 
-  .grid {
-    --gap: var(--space-size-2);
-    grid-template-columns: 1fr;
-    justify-items: center;
+  .flex {
+    flex-wrap: wrap;
   }
 
   &__content {
@@ -27,6 +29,7 @@
 
   &__links {
     .flex {
+      flex-direction: row;
       justify-content: center;
       gap: var(--space-size-1);
     }

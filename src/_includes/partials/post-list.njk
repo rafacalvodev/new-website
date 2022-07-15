@@ -1,11 +1,11 @@
 <article>
   <div class="wrapper" id="post-list">
     <div>
-      {# {% if postListHeadline %}
-                          <h2 class="headline measure-micro" data-highlight="primary">
-                            {{ postListHeadline }}
-                          </h2>
-                        {% endif %} #}
+      {% if postListHeadline %}
+        <h2 class="headline measure-micro" data-highlight="primary">
+          {{ postListHeadline }}
+        </h2>
+      {% endif %}
     </div>
     <ol class="post-list flow" role='list'>
       {% for item in postListItems %}

@@ -1,5 +1,7 @@
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { DateTime } = require('luxon');
+const markdownIt = require('markdown-it');
 
 // Filters
 // const dateFilter = require('./src/filters/date-filter.js');
@@ -53,6 +55,7 @@ module.exports = function (eleventyConfig) {
 
   // Plugins
   eleventyConfig.addPlugin(rssPlugin);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
@@ -63,7 +66,15 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
   });
 
+  // Markdown and anchor options
+  const options = {
+    html: true,
+    breaks: false,
+    linkify: true,
+    typographer: true,
+  };
 
+  eleventyConfig.setLibrary("md", markdownIt(options));
 
 
   return {

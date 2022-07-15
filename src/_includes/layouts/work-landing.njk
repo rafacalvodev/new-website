@@ -1,21 +1,20 @@
 {% extends "layouts/base.njk" %}
-{% set pageHeaderTitle = title %}
+{# {% set pageHeaderTitle = title %} #}
 {# {% set pageHeaderSummary = content %}  #}
-{% block content %}
-  <article>
-    {% include "partials/page-header.njk" %}
+  {% block content %}
+    <article>
+  {% include "partials/page-header.njk" %}
   </article>
-  <section class="work-main">
-    <div class="wrapper">
+    <section class="work-main"> <div class="wrapper">
       <article class="grid">
         {% for item in collections.projects %}
           <figure
             class="card work-main__item">
             {# <div class="[ work-main__media ] [ frame ]" data-frame="primary">
-                                                                                                                                                                                                                                                                                      <img class="radius" src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}"/>
-                                                                                                                                                                                                                                                                                    </div> #}
+                                                                                                                                                                                                                                                                                                              <img class="radius" src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}"/>
+                                                                                                                                                                                                                                                                                                            </div> #}
             <img class="radius" src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}"/>
-            <figcaption class="card__content work-main__content">
+            <figcaption class="work-main__content flex">
               <h3 class="work-main__heading">
                 <a href="{{ item.url }}">{{ item.data.title }}</a>
               </h3>

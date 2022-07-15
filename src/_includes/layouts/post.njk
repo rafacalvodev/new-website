@@ -6,8 +6,8 @@
 {% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
   {% block content %}
   {% include "partials/post-header.njk" %}
-    <article>
-      <div class="wrapper flow"> {{ content | safe }}
+    <article class="blog-post"> <div class="wrapper flow">
+      {{ content | safe }}
     </div>
     {% if recommendedPosts %}
       <footer class="recommended-posts">
