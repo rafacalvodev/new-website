@@ -2,7 +2,7 @@
 title: "About"
 pageTitle: "About"
 pageHeaderTitle: "Hello there!"
-pageHeaderSummary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat egestas lorem, eget fringilla ligula malesuada sed. Nunc vulputate arcu. '
+pageHeaderSummary: 'Here you will find much more information about me. Mainly about how I started in the world of web development and what I use to work.'
 layout: 'layouts/about.njk'
 permalink: '/about/index.html'
 ---
