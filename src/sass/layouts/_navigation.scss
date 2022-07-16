@@ -2,13 +2,10 @@
   background: inherit;
   font-weight: 500;
   padding: .4rem .5rem;
-  //color: var(--primary);
 }
 
 
 .site-head {
-  //color: var(--nav-links-color);
-
   a:hover {
     background: var(--secondary);
   }
@@ -20,14 +17,12 @@
     padding: .4rem .5rem;
     text-decoration: none;
     font-weight: 500;
-    // --outline-color: var(--primary);
   }
 
   &__brand {
-    font-family: 'Alegreya', serif;
+    font-family: 'Alegreya Extra Bold', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: var(--font-3);
     font-weight: 800;
-    //color: var(--primary);
     text-decoration: none;
   }
 

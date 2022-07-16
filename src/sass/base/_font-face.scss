@@ -1,22 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
-
-@font-face {
-  font-family: "Work Sans";
-  src: url("/src/fonts/WorkSans.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans Italic";
-  src: url("/src/fonts/WorkSans-Italic.ttf") format("truetype");
-  font-display: swap;
-}
-
 @font-face {
   font-family: "Atkinson Hyperlegible Regular";
-  src: url("/src/fonts/Atkinson-Hyperlegible-Regular-102.ttf") format("truetype");
+  src: url("../../fonts/Atkinson-Hyperlegible-Regular-102.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans Extra Bold";
+  src: url("../../fonts/WorkSans-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans Bold";
+  src: url("../../fonts/WorkSans-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans Semi Bold";
+  src: url("../../fonts/WorkSans-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya Extra Bold";
+  src: url("../../fonts/Alegreya-ExtraBold.ttf") format("truetype");
   font-display: swap;
 }

@@ -1,11 +1,7 @@
 body {
-  //background-color: #FF8080;
   background-color: var(--background-color);
-  //background-image: url('../../img/bg/Clarence.svg');
-  //background-position: center;
   background-size: auto;
   background-attachment: fixed;
-  // background-repeat: no-repeat;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;

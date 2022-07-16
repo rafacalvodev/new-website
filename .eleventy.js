@@ -3,16 +3,11 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { DateTime } = require('luxon');
 const markdownIt = require('markdown-it');
 
-// Filters
-// const dateFilter = require('./src/filters/date-filter.js');
-// const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 
 module.exports = function (eleventyConfig) {
   // Add filters
-  // eleventyConfig.addFilter('dateFilter', dateFilter);
-  // eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
 
   eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addPassthroughCopy('./src/img/');
