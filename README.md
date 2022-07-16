@@ -15,5 +15,7 @@ Ehh, a few features 😅
 - [ ] Fix the feed page.
 - [ ] Clean the Sass code.
 - [ ] Optimize the images.
+- [ ] Improve fonts load.
+
 
 If I think of anything else, I'll add it to the list.
