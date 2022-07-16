@@ -1,9 +1,9 @@
 ---
-title: 'Rafael Calvo'
+title: 'Home'
 pageTitle: "Homepage of the portfolio of"
 layout: 'layouts/home.njk'
 headerTitle: 'Greetings!'
-metaDesc: "Website/portfolio of Rafael Calvo"
+metaDesc: "Website/portfolio of Rafael Calvo, freelance front-end and WordPress developer."
 home:
   greeting: "Greetings!"
   intro: "I'm a front-end and WordPress developer who helps small businesses improve their online presence by creating a fast and SEO friendly websites."
