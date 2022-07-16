@@ -82,28 +82,21 @@
               {% endif %}
             </section>
           </div>
+          <div class="flow">
+            <section>
+              {% if projectUrl %}
+                <h3>Link</h3>
+                <ul class="project-meta flex" role="list">
+                  <li>
+                    <a href="{{ projectUrl }}">{{ projectUrl }}</a>
+                  </li>
+                </ul>
+              {% endif %}
+            </section>
+          </div>
         </div>
       </div>
     </article>
-    <div
-      class="wrapper">{# <article class="gallery flow">
-                                                                                                                                                                                {% for item in gallery %}
-                                                                                                                                                                                  <figure class="gallery__item flow">
-                                                                                                                                                                                    <div class="gallery__media" data-frame="primary">
-                                                                                                                                                                                      <img src="{{ item.image }}" alt="" aria-hidden="true" class="radius"/>
-                                                                                                                                                                                    </div>
-                                                                                                                                                                                    <figcaption class="gallery__content flow">
-                                                                                                                                                                                      <h2 class="gallery__heading">
-                                                                                                                                                                                        {{ item.title }}
-                                                                                                                                                                                      </h2>
-                                                                                                                                                                                      <p class="gallery__summary">
-                                                                                                                                                                                        {{ item.summary }}
-                                                                                                                                                                                      </p>
-                                                                                                                                                                                    </figcaption>
-                                                                                                                                                                                  </figure>
-                                                                                                                                                                                {% endfor %}
-                                                                                                                                                                              </article> #}
-    </div>
     <div class="wrapper">
       {% if projectImg %}
         <figure class="fig-container">
