@@ -1,6 +1,6 @@
 # Rafael Calvo
 
-My brand new [website/portfolio](https:// rafacalvo.dev).
+My brand new [website/portfolio](https://rafacalvo.dev).
 
 There are still things to add, which I will list below, but I think it is ready for the public.
 
