@@ -4,7 +4,7 @@ title: "And now, a new website"
 pageTitle: "New website |"
 summary: "Well, after some time it's here! Let me tell you about it as best as I can."
 pageHeaderSummary: "Well, after some time it's here! Let me tell you about it as best as I can."
-date: "2022-07-15"
+date: "2022-09-05"
 tags: ['Eleventy', 'HTML', 'CSS']
 ---
 
