@@ -4,5 +4,29 @@
 
 .flow>*+* {
   --flow-spacer: 2rem;
-  margin-block-start: var(--flow-spacer, 1rem);
+  margin-block-start: var(--flow-spacer, clamp(1.09rem, 1rem + .47vw, 1.33rem));
+}
+
+.flow-0>*+* {
+  margin-top: .5rem;
+}
+
+.flow-100>*+* {
+  margin-top: 1rem;
+}
+
+.flow-150>*+* {
+  margin-top: 1.5rem;
+}
+
+.flow-200>*+* {
+  margin-top: 2rem;
+}
+
+.flow-300>*+* {
+  margin-top: 3rem;
+}
+
+.flow-500>*+* {
+  margin-top: 5rem;
 }

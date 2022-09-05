@@ -5,16 +5,16 @@
 {# Grab other posts that aren’t this one for the 'more from the blog' feed #}
 {% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
   {% block content %}
-  {% include "partials/post-header.njk" %}
-    <article class="blog-post"> <div class="wrapper flow">
+    <div class="wrapper flow"> {% include "partials/post-header.njk" %}
+    <article class="blog-post flow">
       {{ content | safe }}
-    </div>
-    {% if recommendedPosts %}
-      <footer class="recommended-posts">
-        {% set postListItems = recommendedPosts %}
-        {% set postListHeadline = 'More from the blog' %}
-        {% include "partials/post-list.njk" %}
-      </footer>
-    {% endif %}
-  </article>
+    </article>
+  </div>
+  {% if recommendedPosts %}
+    <footer class="recommended-posts">
+      {% set postListItems = recommendedPosts %}
+      {% set postListHeadline = 'More from the blog' %}
+      {% include "partials/post-list.njk" %}
+    </footer>
+  {% endif %}
 {% endblock %}
