@@ -73,3 +73,11 @@ ol {
 span {
   font-size: var(--font--1);
 }
+
+code {
+  background: var(--background-color-lighter);
+  border: var(--border-0) solid var(--color-darkest);
+  border-radius: var(--radius-small);
+  padding: 0.15em;
+  font-weight: 500;
+}

@@ -1,5 +1,4 @@
 ---
-
 title: "And now, a new website"
 pageTitle: "New website |"
 summary: "Well, after some time it's here! Let me tell you about it as best as I can."

@@ -2,7 +2,7 @@
 title: "Blog"
 pageHeaderTitle: "Some articles and thoughts"
 pageTitle: "Articles and thoughts by"
-pageHeaderSummary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat egestas lorem, eget fringilla ligula malesuada sed. Nunc vulputate arcu. '
+pageHeaderSummary: "Here I'll be posting articles of a wide variety of topics, from thoughts to long posts and a few tutorials of stuff I've learned and want to share."
 layout: 'layouts/feed.njk'
 pagination:
   data: collections.blog
